@@ -4,12 +4,12 @@ import java.util.Random;
  * @author Rhys
  *
  */
-public class AgentTread implements Runnable {
+public class AgentThread implements Runnable {
 
 	public static String neededIngredient; //The ingredient required from a chef
 	private int sandwichQuota = 20; //Number of sandwiches chefs must produce
 	public volatile int NumSandwiches = 0; //Counter to track sandwiches produced
-	private static AgentTread cs = new AgentTread();
+	private static AgentThread cs = new AgentThread();
 	private static Thread thread = new Thread(cs, "New Thread");
 
 	/**
