@@ -1,8 +1,6 @@
 # School-Project
 A school project
 
-School Project
-
 Modified version of the Cigarette smokers problem using chefs and sandwiches.
 
 The program consists of two classes AgentThread and ChefThread. The AgentThread classes contains the main method and will execute the 
