@@ -7,7 +7,7 @@ public class ChefThread extends Thread {
 	
 	private String ingredient; //This chef's ingredient
 	private int sandwichQuota; //Number of sandwiches chefs must produce
-	private AgentTread ag;
+	private AgentThread ag;
 	
 	/**
 	 * Constructor for a new chef thread contains agent which initialized
@@ -16,7 +16,7 @@ public class ChefThread extends Thread {
 	 * @param type
 	 * @param agent
 	 */
-	public ChefThread(String type, AgentTread agent, int quota) {
+	public ChefThread(String type, AgentThread agent, int quota) {
 		sandwichQuota = quota;
 		ag = agent;
 		ingredient = type;
